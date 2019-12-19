@@ -168,7 +168,6 @@ nav li a:hover {
 }
 .team_person_photo img{
     margin-top: 15px ;
-
     width: 150px;
     border-radius: 50%;
     box-shadow: 0 0 7px rgba(0, 0, 0, 1);
@@ -192,4 +191,127 @@ nav li a:hover {
     margin-bottom: 5px;
     background-color: rgba(255, 255, 255, 0.1);
     padding: 10px 5px;
+}
+
+@media screen and (max-width: 700px) {
+    .logo{
+        position: absolute;
+        width: 250px;
+        height: 200px;
+        left: calc(50% - 125px);
+        top:0;
+
+    }
+        
+    nav {
+        padding-top: 210px;
+    }
+
+    nav ul{
+        height:300px;
+        flex-direction: column;
+        font-size: 45px;
+        line-height: 45px;
+
+    }
+    nav ul li{
+        width: 100%;
+    }
+    nav li a{
+        padding: 0;
+    }
+    
+    li:nth-child(4){
+        margin-right: 0;
+    }
+    
+    li:nth-child(5){
+        margin-left: 0;
+    }
+    
+    nav::after{
+        display: none;
+    }
+    
+    nav::before{
+        display: none;
+
+    }
+
+    .team{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    .content{
+       padding-top: 50px;
+    }
+    .person{
+        margin: 5px 10px;
+        width: calc(100% - 20px);
+        height: 100%;
+    }
+    .buttons{
+        margin-top: 50px;
+        align-items: center;
+        flex-direction: column;
+    }
+    .buttons a{
+        margin: 10px 0;
+    }
+
+    header {
+        background-position: center;
+        
+    }
+
+  }
+
+@media screen and (min-width: 701px) and (max-width: 1023px)  {
+    .logo{
+        width: 500px;
+        height: 400px;
+        left: calc(50% - 250px);
+    }
+    nav ul{
+        height: 90px;  
+        font-size: 10px;
+    }
+    
+    nav ul li{
+        width: 130px;
+    }
+    
+    li:nth-child(4){
+        margin-right: 100px;
+    }
+    
+    li:nth-child(5){
+        margin-left: 100px;
+    }
+    
+    nav li a{
+        padding: 7px 7px;
+    }
+    .person{
+        width: 120px;
+        height: 320px;
+        margin: 10xp 3px;
+    }
+
+    .team_person_photo img{
+        width: 50px;
+        margin: 10px 10px;
+    }
+    .team_person_info{
+        font-size: 11px;
+    }
+
+    .team_person_info h4{
+        height: 50px;
+    }
+
+    .buttons a{
+        font-size: 12px;
+    }
 }
