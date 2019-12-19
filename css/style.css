@@ -136,7 +136,9 @@ nav li a:hover {
     border: 1px solid rgb(177, 10, 10);
 }
 
-
+.content{
+    transition: .5 ease;
+}
 .team{
     position: relative;
     justify-content: center;
